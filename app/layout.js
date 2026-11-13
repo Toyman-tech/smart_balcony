@@ -15,6 +15,22 @@ export const metadata = {
   title: "Smart Balcony Garden | Live IoT Dashboard",
   description:
     "Real-time ESP32 telemetry and irrigation monitoring powered by Next.js and Firebase Realtime Database.",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Smart Garden",
+  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: "cover",
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#020617" },
+    { media: "(prefers-color-scheme: light)", color: "#f8fafc" },
+  ],
 };
 
 const themeInitScript = `
